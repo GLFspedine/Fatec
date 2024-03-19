@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../aulas"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "aulas"
+	}
+}

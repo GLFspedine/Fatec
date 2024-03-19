@@ -1,0 +1,21 @@
+        table,tr,td,th{
+            font-family: "Roboto", sans-serif;
+            border: solid 2px gray;
+            border-collapse: collapse;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 10px;
+            text-align: center;
+            }
+        th{
+            background-color: rgb(78, 201, 84);
+        } 
+        td[scope = 'row']{
+            background-color: rgb(186, 183, 183);
+        }    
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
