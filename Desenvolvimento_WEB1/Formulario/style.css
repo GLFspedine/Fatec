@@ -1,0 +1,18 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  table,tr,td,th{
+    font-family: "Roboto", sans-serif;
+    border: solid 2px gray;
+    border-collapse: collapse;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    text-align: center;
+    }

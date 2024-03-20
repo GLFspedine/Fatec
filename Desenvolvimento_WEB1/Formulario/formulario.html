@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table>
+    <p>Cadastro</p>
+    <tr>
+    <td>
+    <form>
+        <label for="nome">Nome: </label>
+        <input type="text" 
+                name="nome" 
+                id="nome" 
+                placeholder="insira seu nome aqui..." 
+                size="20" 
+                maxlength="20" 
+                minlength="5"
+                required>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <label for="Senha">Senha: </label>
+        <input type="password" 
+                name="senha" 
+                id="senha"
+                size="20"
+                placeholder="insira sua senha aqui...">
+    </td>
+    </tr>          
+    <tr>
+    <td>
+        <label for="idade">Idade: </label>
+        <input type="number" 
+                name="idade" 
+                id="idade"
+                min="0"
+                max="150"
+                value="3"
+                step="3">
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <label for="cidade">Cidade: </label>
+        <input type="text" 
+                name="cidade" 
+                id="cidade"
+                placeholder="insira sua cidade aqui...">
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <label for="estado">UF: </label>
+        <select name="uf" id="estado">
+            <optgroup label="Norte">
+                <option value="Amazonas">AM</option>
+                <option value="Amapá">AP</option>
+                <option value="Acre">AC</option>
+                <option value="Pará">PA</option>
+                <option value="Tocantins">TO</option>
+                <option value="Rondônia">RO</option>
+                <option value="Roraima">RR</option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="Maranhão">MA</option>
+                <option value="Piauí">PI</option>
+                <option value="Ceará">CE</option>
+                <option value="Rio Grande do Norte">RN</option>
+                <option value="Pernanbuco">PE</option>
+                <option value="Paraíba">PB</option>
+                <option value="Sergipe">SE</option>
+                <option value="Alagoas">AL</option>
+                <option value="Bahia">BA</option>
+            </optgroup>
+            <optgroup label="Sudeste">
+                <option value="Espirito Santo">ES</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="São Paulo">SP</option>
+                <option value="Rio de Janeiro">RJ</option>
+            </optgroup>
+            <optgroup label="Centro Oeste">
+                <option value="Distrito Federal">DF</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Goiás">GO</option>
+                <option value="Mato Grosso Sul">MS</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="Paraná">PR</option>
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Santa Catarina">SC</option>
+            </optgroup>
+    </select>   
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <label for="email">E-mail: </label>
+        <input type="email" 
+                name="email" 
+                id="email">
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <label for="cor">Sua Cor Favorita:</label>
+        <input type="color" 
+                name="cor" 
+                id="cor">
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="site">Site: </label>
+            <input type="url" 
+                    name="site" 
+                    id="site">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="range">Range: </label>
+            <input type="range" 
+                    name="range" 
+                    id="range"
+                    min="0"
+                    max="100">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="foto">Foto: </label>
+            <input type="file" 
+                    name="foto" 
+                    id="foto">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="tel">Tel: </label>
+            <input type="tel" 
+                    name="tel" 
+                    id="tel">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" 
+                    value="Cadastrar">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="reset" 
+                    value="Limpar Dados">
+        </td>
+    </tr>
+    </form>
+    </table>
+    <br>
+    <form>
+        <h1>Exercicio 01</h1>
+        <p>Envie uma mensagem preenchendo o formulario abaixo</p>
+        <label for="nome">Seu Nome: </label>
+        <input type="text" 
+                name="nome" 
+                id="nome" 
+                placeholder="Digite seu nome*"
+                required>
+    <br>
+        <label for="tel">Seu Telefone: </label>
+        <input type="tel" 
+                name="tel" 
+                id="tel"
+                placeholder="Digite seu Telefone">
+    <br>
+        <label for="email">Seu E-mail: </label>
+        <input type="email" 
+                name="email" 
+                id="email"
+                placeholder="Digite seu E-Mail*"
+                required>
+    <br>
+    Deseja receber nossas novidades?
+    <input type="radio" name="pergunta" id="sim">
+    <label for="sim">Sim</label>
+    <input type="radio" name="pergunta" id="não">
+    <label for="não">Não</label>
+    <br>
+    Sua mensagem: 
+    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" 
+    value="Enviar">
+    </form>
+</body>
+</html>
